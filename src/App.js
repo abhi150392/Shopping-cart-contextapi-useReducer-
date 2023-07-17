@@ -8,12 +8,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <>
+      <div>
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </>
+      </div>
     </BrowserRouter>
   );
 };
