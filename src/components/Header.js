@@ -1,15 +1,8 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { AiFillDelete } from "react-icons/ai";
-import {
-  Badge,
-  Button,
-  Container,
-  Dropdown,
-  FormControl,
-  Nav,
-  Navbar,
-} from "react-bootstrap";
+// import { AiFillDelete } from "react-icons/ai";
+import { Container, Dropdown, FormControl, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import "./styles.css";
 
 const Header = () => {
@@ -17,7 +10,7 @@ const Header = () => {
     <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
       <Container>
         <Navbar.Brand>
-          <a href="/">Shopping Cart</a>
+          <Link to="/">Shopping Cart</Link>
         </Navbar.Brand>
         <Navbar.Text className="search">
           <FormControl
@@ -27,7 +20,7 @@ const Header = () => {
           />
         </Navbar.Text>
         <Nav>
-          <Dropdown alignRight>
+          <Dropdown>
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
               {/* <Badge>{cart.length}</Badge> */}
