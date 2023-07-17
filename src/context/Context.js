@@ -13,7 +13,7 @@ const Context = ({ children }) => {
     price: faker.commerce.price(),
     ratings: faker.helpers.arrayElement([1, 2, 3, 4, 5]),
     inStock: faker.helpers.arrayElement([0, 3, 5, 6, 7]),
-    image: faker.image.fashion(),
+    image: faker.image.urlPicsumPhotos(),
     fastDelivery: faker.datatype.boolean(),
   }));
   //console.log(products);
